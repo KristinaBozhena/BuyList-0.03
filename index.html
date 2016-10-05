@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body> 
+    <div class="bl-container">
+        <div class="bl-background">
+            <div class="bl-bought">
+                <div class="bl-title">Залишилося</div>
+                <div class="bl-title-list">
+                    <div class="bl-not-bought-template" style="display:none">
+                        <span class="bl-not-bought-list">
+                            <span class="bl-name-prod">Бургер</span>
+                            <span class="bl-count-list">1</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="bl-title">Куплено</div>
+                <div class="bl-title-list">
+                </div>
+                <div class="bl-list" claerfix>
+                    <div class="bl-new-product">
+                        <button class="bl-add-product">Додати</button>
+                        <input type="text" placeholder="Назва товару" class="add-prod-text">
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+    <div class="banner">
+        <div class="bl-buylist">Buy List</div>
+        <div class="bl-creation">Created by:</div>
+        <div class="bl-myname">Christina</div>
+    </div>  
+    
+    <div class="row-template" style="display:none">  
+         <div class="bl-row">   
+            <div class="bl-product"></div>
+             <input type="text" class="bl-change-name" placeholder="Нова назва">
+            <div class="bl-count">
+                <button class="bl-minus" data-tooltip="Зменшити">-</button>
+                <span class="bl-label">2</span>
+                <button class="bl-plus" data-tooltip="Збільшити">+</button>
+            </div>
+            <div class="bl-buttons">
+                <button class="bl-delete" data-tooltip="Вмдалити">х</button>
+                <button class="bl-buy" data-tooltip="Куплено">Куплено</button>
+                <button class="bl-buy-bought" data-tooltip="Не куплено">Не куплено</button>
+        </div>
+        </div>
+     </div>    
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script> 
+    <script type="text/javascript" src="/main.js"> </script> 
+</body>
+</html>
