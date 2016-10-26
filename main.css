@@ -25,8 +25,10 @@ body{
 .bl-bought {
     background: #DCDCDC;
     width: 250px;
+    height: 100%;
     float: right;
     overflow: hidden;
+    display: block;
     margin-left: 50px;
     margin-right: 40px;
     border-radius: 6px;
@@ -42,13 +44,21 @@ body{
     margin: 1px 1px;
 }
 
-.bl-title-list{
+.bl-title-list-not-bought{
     background: white;
     padding: 10px;
     margin: 1px 1px;
 }
 
-.bl-not-bought-list{
+
+.bl-title-list-bought{
+    background: white;
+    padding: 10px;
+    margin: 1px 1px;
+    text-decoration: line-through;
+}
+
+.bl-item-list{
     background-color: #E8E8E8;
     padding: 9px;
     height: 9px;
@@ -123,16 +133,19 @@ body{
 }
 
 .add-prod-text {
-    width: 68%;
+    width: 70%;
     height: 15px;
     padding: 10px 10px;
     margin: 2px;
     margin-right: 0px;
+    margin-left: 0px;
     display: inline-block;
     border: 1px solid #6495ED;
     border-radius: 4px;
     text-align: left;
     font-size: 100%;
+    border-radius: 5px 0px 0px 5px;
+    overflow: scroll;
     font-family: Arial;
     color: #000000;
     float:right;
@@ -141,7 +154,8 @@ body{
 /*Кнопки*/
 .bl-add-product{
     float:right;
-    padding: 10px 25px;
+    width: 25%;
+    padding: 11px 8%;
     margin-left: 0px;
     font-size: 90%;
     text-align: center;
@@ -473,6 +487,7 @@ button:hover::after{
         margin-right: 30px;
     }
 }
+
 .state-not-bought .bl-buy-bought{
     display: none;
 }
@@ -482,8 +497,8 @@ button:hover::after{
     
 }
 
-.state-bought .bl-product{
-    text-decoration: line-through;
+.state-not-bought .item-bought{
+    display: none;
 }
 
 .state-not-change-name .bl-change-name{
@@ -493,6 +508,7 @@ button:hover::after{
 .state-change-name .bl-change-name{
     width: 30%;
     padding: 10px;
+    margin: 10px;
 }
 .state-change-name .bl-product{
     display: none;
